@@ -1,5 +1,8 @@
 package com.morley.boot.controller;
 
+import com.morley.boot.bean.Person;
+import com.morley.boot.sevice.PersonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,6 +11,8 @@ import java.util.Map;
 
 @RestController //包含了 conroller 和requestbody 注解
 public class HelloController {
+
+
 
     @RequestMapping("/hello") //映射请求
     public String handle01(){
@@ -30,7 +35,8 @@ public class HelloController {
     public String deleteUser(){
         return "DELETE-张三";
     }
-@RequestMapping("car/{id}/owner/{name}")//获取参数
+
+   @RequestMapping("car/{id}/owner/{name}")//获取参数
     public String car(@PathVariable("id")Integer id,
                       @PathVariable("name")String name,
                       @PathVariable Map<Integer,String> pv,
@@ -40,5 +46,16 @@ public class HelloController {
 
         return  String.valueOf(id)+name;
 }
+    @Autowired
+    PersonService personService;
+
+
+    @RequestMapping("/hi")
+    public Person[] getpersion(){
+        return personService.people();
+    }
+
+
+
 
 }

@@ -1,4 +1,4 @@
-package com.morley.boot.controller.config;
+package com.morley.boot.config;
 
 
 import com.morley.boot.bean.Car;
