@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+.sidebar ul li{
+    list-style: none;
+    color: #00B7FF;
+    margin: 60px 20px  20px;
+    text-align: left;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+}
+
+.sidebar ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+.sidebar ul{
+    padding: 0;
+
+}
+.sidebar ul li {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+.sidebar{
+    margin: 20px;
+    border: solid;
+    width: 10%;
+    height:800px;
+    float: left;
+
+}
+
+.main_content{
+    margin: 20px;
+    float:left;
+    width: 1560px;
+    height:800px;
+
+
+}
+
+#header{
+
+
+}
+/*#parfir p{*/
+/*float: left;*/
+/*width: 20%;*/
+
+/*}*/
+/*        #parfir input{*/
+/*          width: 80%;*/
+
+
+/*        }*/
+
+
+/*#parfir p{*/
+/*    color: green;*/
+/*    width: 80%;*/
+/*}*/
+/*#search input{*/
+
+/*    width: 20%;*/
+/*}*/
+
+
+#parfir p{
+    width: 40%;
+    margin: 0;
+    display: inline;
+
+    font-size: 30px;
+
+
+}
+#search{
+    width: 30%;
+    margin: 0;
+    float: right;
+
+}
+
+/*#parfir{*/
+/*    margin: 20px;*/
+
+/*}*/
+#inbl{
+    margin: 0;
+    position: relative;
+    margin-left: 300px;
+    display: inline;
+}
+
+#butn{
+
+    display: inline;
+    color: black;
+    background-color: #00B7FF;
+
+}
+.item{
+    height: 200px;
+    float: left;
+    background-color: white;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+
+}
+.item img{
+    height: 100%;
+    width: 100%;
+
+
+}
+.item div{
+    width: 245px;
+    text-align: center;
+    color: green;
+}
+.item button{
+    height: 30px;
+    width: 90px;
+    background-color: #00B7FF;
+
+}
+
+#joinusbutton{
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    background: aqua;
+}
+#joinuspic{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 450px
+
+}
+#feedbacktext{
+    resize: none;
+    height: 500px;
+    width: 700px;
+border-color: aquamarine;
+    margin-right: auto;
+    margin-left: 200px;
+    margin-top: 30px;
+
+}
+#summitbutton{
+    display: block;
+    margin-right: auto;
+    margin-left: 1160px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+.channellistpic{
+
+    height: 80px;
+    width: 80px;
+    border-radius: 40%;
+}
+
+.channelli{
+    list-style: none;
+   display: inline-block;
+position: absolute;
+margin-top: 10px;
+
+
+}
+.chaeeltype{
+    display: inline;
+
+
+
+}
+.channelname{
+    display: inline;
+    text-decoration: underline;
+
+
+}
+.channelmain{
+    margin-left: 130px;
+    margin-top: 10px;
+
+
+}
+.channelbutton{
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+background: aqua;
+
+}
+
+
+
+/*.channellisth{*/
+/*    display: inline;*/
+
+
+
+/*}*/
+/*.channelli{*/
+
+
+
+
+/*}*/
+/*.joinusPic{*/
+/*    border-radius: 50%;*/
+/*    position: relative;*/
+
+/*    clear: both;*/
+
+/*}*/
+/*#msjspl{*/
+/*     height: 600px;*/
+/*    width: 600px;*/
+/*    float: left;*/
+
+/*}*/
+/*!*#poli{*!*/
+/*!*   margin-left: 40%;*!*/
+
+
+
+/*}*/

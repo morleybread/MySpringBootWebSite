@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<header>
+    <title>Meadowlark Travel</title>
+    <img src="/img/logo.png"   style="width: 60px;border-radius: 50%"   onclick="
+
+            function hello(){
+                alert('hello');
+
+            }
+
+            hello();
+
+
+"  alt="Meadowlark Travel">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+</header>
+
+<body>
+
+
+<div id="header">
+
+    <div id="parfir">
+        <p>Welcome  and get a good theme!</p>
+        <div id="search"   >
+            <div id="inbl">
+                <input type="search" >
+                <input type="button" id="butn" value="提交">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div id="main">
+    <div class="sidebar">
+        <ul>
+            <li @click="getDesktop">DESKTOP</li>
+            <li @click="getAndroid">ANDROID</li>
+            <li @click="getMore">CHANNEL LIST</li>
+            <li @click="getjoinus">JOIN US</li>
+            <li @click="getFeedback">FEEDBACK</li>
+
+        </ul>
+    </div>
+
+    <div class="main_content" v-if="flagses=='true'">
+
+
+        <div class="item"  v-for="itms  of picPaths ">
+
+            <img :src="itms.picPath"  >
+
+            <div>
+                <p>theme name</p>
+                <p>come from group or channel</p>
+                <p>Author</p>
+                <button>use</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div v-else>
+
+
+        <div v-if="flagejos=='true'">
+
+            <img   id="joinuspic"  src="/img/logo.png" >
+            <button id="joinusbutton" >JOIN US!</button>
+
+        </div>
+
+
+        <div v-if="flagsfeed=='true'">
+
+            <h4>hello! welcom to our website ,<br>if you have any suggestions for us about the copyright of the theme or other issuses ,please let us know !</h4>
+         <form action="/feedback" method="post" target="_blank">
+
+
+             <textarea id="feedbacktext" name="feedback"> </textarea>
+              <button type="submit"  id="summitbutton">Summit!</button>
+
+         </form>
+
+
+
+
+
+        </div>
+
+
+        <div v-if="morel=='true'" class="channelmain">
+
+<div class="channelmain">
+
+    <ul>
+        <img class="channellistpic" src="/channelicon/iOS THEMES.jpg">
+        <li class="channelli" >&nbsp;&nbsp;&nbsp; channelName:<p class="channelname">THEMES IOS</p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:<p class="chaeeltype">IOS</p> &nbsp;&nbsp;&nbsp;
+        follow number:50K &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;invit Link:t.me/addthemeiOS&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="channelbutton">join it ! </button>
+
+        </li>
+
+    </ul>
+
+
+</div>
+<!--  morel is channel list-->
+
+
+
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
+
+<script src="javascripts/vue.js"></script>
+<script src="javascripts/mysiteapp.js"></script>

@@ -1,4 +1,4 @@
-package com.morley.boot.mapper;
+package com.morley.boot.dao;
 
 import com.morley.boot.bean.Person;
 import org.apache.ibatis.annotations.Mapper;

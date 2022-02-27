@@ -5,6 +5,7 @@ import com.morley.boot.sevice.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import java.util.Map;
@@ -12,11 +13,15 @@ import java.util.Map;
 @RestController //包含了 conroller 和requestbody 注解
 public class HelloController {
 
+    @RequestMapping("/l") //映射请求
+    public ModelAndView handle00(){
+        return new ModelAndView("welcome.html") ;
+    }
 
 
     @RequestMapping("/hello") //映射请求
-    public String handle01(){
-        return  "hello,Spring boot 2";
+    public ModelAndView handle01(){
+        return new ModelAndView("def.jpg") ;
     }
 
     @RequestMapping(value = "/user",method = RequestMethod.POST)//

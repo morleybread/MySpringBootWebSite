@@ -1,7 +1,7 @@
 package com.morley.boot.sevice;
 
 import com.morley.boot.bean.Person;
-import com.morley.boot.mapper.PersonMapper;
+import com.morley.boot.dao.PersonMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

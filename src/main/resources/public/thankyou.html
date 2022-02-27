@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--<script src="/javascripts/confetti.module.mjs"></script>-->
+
+    <style>
+
+        #feedbackbutton{
+            height: 600px;
+            width: 600px;
+            margin-top: 100px;
+            border-radius: 50%;
+            margin-left: 600px;
+            margin-right: auto;
+ background-color: aqua;
+            font-size: 50px;
+        }
+
+        /*.fire{*/
+        /*    position: absolute;*/
+        /*    padding: 5px 0;*/
+        /*    width: 20px;*/
+        /*    height: 100px;*/
+        /*    background: red;*/
+        /*    color: #fff;*/
+        /*    border: 0;*/
+        /*    left: calc(50% - 10px);*/
+        /*    bottom: 20%;*/
+        /*    cursor: pointer;*/
+        /*    font-size: 12px;*/
+        /*    outline: none;*/
+
+
+        /*}*/
+
+
+    </style>
+
+</head>
+<body>
+
+
+<button id="feedbackbutton">Thank you very much !</button>
+
+</body>
+</html>
+<script type="module">
+    // import confetti from 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/confetti.module.mjs';
+    import confetti from 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/confetti.module.mjs';
+    // document.querySelector('.fire').onclick = () => {
+    //     confetti();
+    // }
+    //
+    // const sleep =(delay)=> new Promise((resolve) =>setTimeout(resolve,delay))
+    //
+    // const reapt=async ()=>{
+    //     await sleep(1000)
+    //  confetti()
+    //     await sleep(1000)
+    //     confetti()
+    //     await sleep(1000)
+    //     confetti()
+    //     await sleep(1000)
+    //     confetti()
+    // }
+    // reapt()
+
+    async function reapert(){
+        for(let i=0;i<=10;i++){
+            await  new Promise((resolve) =>{
+                    setTimeout(resolve,100)
+                  confetti()
+                }
+            )
+        }
+    }
+    reapert()
+
+
+    // setTimeout(()=>{ confetti()
+    // },1000)
+    //
+    //
+    // setTimeout(()=>{ confetti()
+    // },2000)
+    //
+    // setTimeout(()=>{ confetti()
+    // },3000)
+    //
+    // setTimeout(()=>{ confetti()
+    // },4000)
+    //
+    // setTimeout(()=>{ confetti()
+    // },5000)
+
+
+
+</script>
