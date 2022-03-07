@@ -54,12 +54,10 @@
 
         <div class="item"  v-for="itms  of picPaths ">
 
-            <img :src="itms.picPath"  >
+            <img :src="itms.preview"  >
 
             <div>
-                <p>theme name</p>
-                <p>come from group or channel</p>
-                <p>Author</p>
+                <p>{{ itms.themename}}</p>
                 <button>use</button>
             </div>
 
@@ -99,7 +97,6 @@
         <div v-if="morel=='true'" class="channelmain">
 
 <div class="channelmain">
-
     <ul>
         <img class="channellistpic" src="/channelicon/iOS THEMES.jpg">
         <li class="channelli" >&nbsp;&nbsp;&nbsp; channelName:<p class="channelname">THEMES IOS</p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:<p class="chaeeltype">IOS</p> &nbsp;&nbsp;&nbsp;

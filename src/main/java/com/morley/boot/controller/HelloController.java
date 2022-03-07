@@ -1,7 +1,9 @@
 package com.morley.boot.controller;
 
 import com.morley.boot.bean.Person;
+import com.morley.boot.bean.Theme;
 import com.morley.boot.sevice.PersonService;
+import com.morley.boot.sevice.ThemeSevice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +15,7 @@ import java.util.Map;
 @RestController //包含了 conroller 和requestbody 注解
 public class HelloController {
 
-    @RequestMapping("/l") //映射请求
+    @RequestMapping("/") //映射请求
     public ModelAndView handle00(){
         return new ModelAndView("welcome.html") ;
     }
@@ -51,16 +53,22 @@ public class HelloController {
 
         return  String.valueOf(id)+name;
 }
+
+
+
     @Autowired
     PersonService personService;
-
-
     @RequestMapping("/hi")
     public Person[] getpersion(){
         return personService.people();
     }
 
-
+@Autowired
+    ThemeSevice themeSevice;
+    @RequestMapping("/getthemepath")
+    public Theme[] getthemepath(){
+        return themeSevice.themes();
+    }
 
 
 }
