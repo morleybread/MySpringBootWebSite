@@ -22,19 +22,20 @@ created(){
     .then(res=>res.json())
     .then(json=>{
     this.picPaths=json
-        console.log( this.picPaths[0].picPath)
+
     })
 
         },
-        getDesktop:function (){
-            this.flagses="true"
-            fetch("http://127.0.0.1:3000/desktoptheme")
-                .then(res=>res.json())
-                .then(json=>{
-                       this.picPaths=json
-                       console.log(this.picPaths)
 
-        })},
+//        getDesktop:function (){
+//            this.flagses="true"
+//            fetch("http://127.0.0.1:3000/desktoptheme")
+//                .then(res=>res.json())
+//                .then(json=>{
+//                       this.picPaths=json
+//                       console.log(this.picPaths)
+//
+//        })},
         getjoinus:function (){
             this.flagses="false"
             this.flagejos="true"

@@ -6,6 +6,6 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface ThemeMapper {
-    @Select("select * from person")
+    @Select("select * from Androidtheme")
     public Theme[] theme();
 }

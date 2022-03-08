@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Android Theme</title>
+    <link rel="stylesheet" href="/stylesheets/Android.css">
+</head>
+<body>
+
+<div id="main">
+
+
+    <div class="item"  v-for="itms  of picPaths ">
+
+        <img :src="itms.preview"  >
+
+        <div>
+            <p>{{ itms.themeName}}</p>
+            <button>use</button>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="javascripts/vue.js"></script>
+<script src="javascripts/AndroidEquipment.js"></script>

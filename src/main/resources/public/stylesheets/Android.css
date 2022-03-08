@@ -1,0 +1,29 @@
+.item{
+
+    height: 236px;
+    float: left;
+    background-color: white;
+    margin-right: 95px;
+    margin-left: 95px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+
+}
+.item img{
+    height: 100%;
+    width: 100%;
+
+
+}
+.item div{
+    width: 245px;
+    text-align: center;
+    color: green;
+}
+.item button{
+    height: 30px;
+    width: 90px;
+    background-color: #00B7FF;
+
+}

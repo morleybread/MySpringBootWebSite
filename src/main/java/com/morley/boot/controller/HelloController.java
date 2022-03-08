@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
+@CrossOrigin
 @RestController //包含了 conroller 和requestbody 注解
 public class HelloController {
 
@@ -21,9 +22,9 @@ public class HelloController {
     }
 
 
-    @RequestMapping("/hello") //映射请求
+    @RequestMapping("/Android") //映射请求
     public ModelAndView handle01(){
-        return new ModelAndView("def.jpg") ;
+        return new ModelAndView("AndriodEquipment.html") ;
     }
 
     @RequestMapping(value = "/user",method = RequestMethod.POST)//
