@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>Android Theme</title>
     <link rel="stylesheet" href="/stylesheets/Android.css">
+    <link rel="stylesheet" href="/stylesheets/element.css">
 </head>
 <body>
-
 <div id="main">
-
-
     <div class="item"  v-for="itms  of picPaths ">
 
         <img :src="itms.preview"  >
@@ -22,8 +20,18 @@
     </div>
 </div>
 
+<el-row class="mb-4">
+    <el-button>Default</el-button>
+    <el-button type="primary">Primary</el-button>
+    <el-button type="success">Success</el-button>
+    <el-button type="info">Info</el-button>
+    <el-button type="warning">Warning</el-button>
+    <el-button type="danger">Danger</el-button>
+    <el-button>中文</el-button>
+</el-row>
 
 </body>
 </html>
 <script src="javascripts/vue.js"></script>
+<script src="javascripts/element-plus.js"></script>
 <script src="javascripts/AndroidEquipment.js"></script>

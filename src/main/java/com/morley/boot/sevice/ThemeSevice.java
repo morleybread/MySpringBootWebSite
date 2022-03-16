@@ -11,7 +11,9 @@ public class ThemeSevice {
     ThemeMapper themeMapper;
 
     public Theme[] themes(){
+
         return themeMapper.theme();
+
     }
 
 }

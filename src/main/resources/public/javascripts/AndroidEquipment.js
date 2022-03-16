@@ -15,18 +15,14 @@ created(){
         },
         getAndroid:function (){
             this.flagses="true"
-    fetch("http://127.0.0.1:8888/getthemepath")
+    fetch("/getthemepath")
     .then(res=>res.json())
     .then(json=>{
     this.picPaths=json
-
     })
-
         },
-
-
-
-
-
     }
 })
+app.use(ElementPlus);
+
+

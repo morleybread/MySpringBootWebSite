@@ -8,24 +8,47 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
+
+//	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:97.0) Gecko/20100101 Firefox/97.0
+//	Mozilla/5.0 (Linux; Android 7.0; SM-G892A Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36
 @CrossOrigin
 @RestController //包含了 conroller 和requestbody 注解
 public class HelloController {
 
     @RequestMapping("/") //映射请求
-    public ModelAndView handle00(){
-        return new ModelAndView("welcome.html") ;
+    public ModelAndView handle00(@RequestHeader("User-Agent") String EquipMent){
+
+        System.out.println(EquipMent);
+        if(EquipMent.contains("Android"))
+        {
+            return new ModelAndView("AndriodEquipment.html") ;
+        }
+        else {
+            return new ModelAndView("welcome.html") ;
+        }
+
     }
+
+
 
 
     @RequestMapping("/Android") //映射请求
     public ModelAndView handle01(){
         return new ModelAndView("AndriodEquipment.html") ;
     }
+//
+//    @RequestMapping("/mytry") //映射请求
+//    public ModelAndView handle02(){
+//        return new ModelAndView("mytry.html") ;
+//    }
+//    @RequestMapping("/mytry3") //映射请求
+//    public ModelAndView handle03(){
+//        return new ModelAndView("welcome.html") ;
+//    }
+
 
     @RequestMapping(value = "/user",method = RequestMethod.POST)//
     public String saveUser(HttpSession httpSession){
